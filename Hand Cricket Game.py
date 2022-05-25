@@ -1,4 +1,3 @@
-
 import random as rand
 
 countme=0
