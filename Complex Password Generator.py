@@ -1,6 +1,5 @@
 import random as rand
 
-
 no_alphabets=int(input("Enter the number of Alphabets you want in the Password \n"))
 no_numbers=int(input("Enter the number of Numbers you want in the Password \n"))
 no_spcl=int(input("Enter the number of Special Characters you want in the Password \n"))
@@ -11,17 +10,13 @@ alphabets=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','
 numbers=['1','2','3','4','5','6','7','8','9','0']
 special_characters=['!','@','#','$','%','^','&','*','(',')','_','-','+','=','/','?','<','>','~','.']
 
-
 for i in range(no_alphabets):
-               password.append(rand.choice(alphabets))
-               
+               password.append(rand.choice(alphabets))              
 for i in range(no_numbers):
-               password.append(rand.choice(numbers))
-               
+               password.append(rand.choice(numbers))            
 for i in range(no_spcl):
                password.append(rand.choice(special_characters))
-
-        
+      
 rand.shuffle(password)
 pw=''.join(password)
 
